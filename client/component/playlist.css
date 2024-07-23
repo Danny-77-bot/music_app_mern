@@ -26,7 +26,8 @@
 .music-box-2 {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center; 
+ 
 }
 hr {
     width:160px;
@@ -34,4 +35,14 @@ hr {
 .music-time {
     display: flex;
     align-items: center;
+}
+.create-music-box img {
+   width:20px;
+   height:20px;
+   object-fit: contain;
+}
+.create-music-box {
+    display: flex;
+    align-items: center;
+    gap:20px;
 }

@@ -30,9 +30,15 @@ export default function Playlist() {
             <div>
               <p>3:20</p>
             </div>
-             
-          
           </div>
+        </div>
+
+        <div className="create-music-box">
+          <img src={assets.play_icon} alt="" />
+          <img src={assets.mic_icon} alt="" />
+          <img src={assets.queue_icon} alt="" />
+          <img src={assets.speaker_icon} alt="" />
+          <img src={assets.volume_icon} alt="" />
         </div>
     </div>
   )
