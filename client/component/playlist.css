@@ -1,0 +1,37 @@
+.music-top {
+    display: flex;
+    gap:10px;
+    width:150px;
+}
+.music-top img {
+    width:30px;
+}
+.music-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    bottom:1px;
+    position: relative;
+    bottom:-100px;
+}
+.music-controls img {
+    width:20px;
+    height:20px;
+    object-fit: contain;
+}
+.music-box img {
+    width:50px;
+}
+.music-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+hr {
+    width:160px;
+}
+.music-time {
+    display: flex;
+    align-items: center;
+}

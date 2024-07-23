@@ -1,0 +1,84 @@
+.side-box {
+
+    width: 38%;
+    overflow-y: auto; /* Enable vertical scrollbar */
+    scrollbar-width: thin; /* Thin scrollbar (only works in Firefox currently) */
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0); /* Scrollbar color (thumb color and track color) */
+
+    /* For WebKit (Chrome, Safari) browsers */
+    &::-webkit-scrollbar {
+        width: 6px; /* Width of the scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0); /* Track color (transparent) */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.5); /* Thumb color */
+        border-radius: 3px; /* Rounded corners */
+    }
+}
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    background-color:black;
+    max-height: 550px;
+}
+.home-box {
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.library-box {
+    display: flex;
+    gap:30px;
+}
+.library-box-img {
+    display: flex;
+    align-items: center;
+    gap:5px;
+}
+.library-box-img img {
+    width:50px;
+}
+.library-draw img {
+    width:20px;
+   margin-right:5px;
+   flex:1;
+  margin-top: 10px;
+}
+.playlist-box {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size: 14px;
+}
+.playlist-box button {
+    background-color:white;
+    color:black;
+    padding:4px;
+    width:120px;
+    border:none;
+
+}
+.playlist-box h1 {
+    font-size:14px;
+}
+.podcast-box {
+   display: flex;
+   flex-direction: column;
+   gap:13px;
+   background-color: rgba(10, 10, 10, 0.209); 
+   font-size: 14px;
+}
+.podcast-box button {
+    background-color: white;
+    color:black;
+    padding:4px;
+    width:120px;
+}
+.podcast-box h1 {
+    font-size:16px;
+}

@@ -1,0 +1,17 @@
+
+.main-box {
+    height:100%;
+    width:100%;
+   display: flex;   
+    flex-direction: column;
+   
+}
+.side-box {
+    height:100%;
+    flex:1;
+}
+.playlist-box {
+    bottom: 2px;
+    flex:4;
+    gap:20px;
+}
