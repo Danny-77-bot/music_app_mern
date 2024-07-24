@@ -1,23 +1,11 @@
+.sidebar img {
+    width:30px;
+    height:30px;
+    object-fit: contain;
+}
 .side-box {
-
-    width: 38%;
+   display: flex;
     overflow-y: auto; /* Enable vertical scrollbar */
-    scrollbar-width: thin; /* Thin scrollbar (only works in Firefox currently) */
-    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0); /* Scrollbar color (thumb color and track color) */
-
-    /* For WebKit (Chrome, Safari) browsers */
-    &::-webkit-scrollbar {
-        width: 6px; /* Width of the scrollbar */
-    }
-
-    &::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0); /* Track color (transparent) */
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.5); /* Thumb color */
-        border-radius: 3px; /* Rounded corners */
-    }
 }
 .sidebar-wrapper {
     display: flex;
