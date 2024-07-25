@@ -1,11 +1,25 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width:65vh;
-    margin-top: 10px;
+   justify-content: space-between;
 }
 .image-desc {
     display: flex;
-    gap:30px;
+      gap:20px;
+   justify-content: space-between;
+}
+.navbar .username {
+    background-color: blue;
+    padding:5px;
+    border-radius: 50%;
+}
+.music-options {
+    display: flex;
+    gap:6px;
+}
+.all {
+    background-color: white;
+    color:black;
+    padding:3px;
+    border-radius:50%;
 }
