@@ -16,6 +16,7 @@
 .music-options {
     display: flex;
     gap:6px;
+    margin: 20px 0;
 }
 .all {
     background-color: white;

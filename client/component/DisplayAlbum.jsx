@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { useParams } from 'react-router-dom'
-import { albumsData, assets } from '../src/assets/frontend-assets/assets';
+import { albumsData, assets, songsData } from '../src/assets/frontend-assets/assets';
 import './displayAlbum.css';
 export default function DisplayAlbum() {
     const {id}=useParams();
@@ -9,8 +9,12 @@ export default function DisplayAlbum() {
 
   return (
     <div className='display-album'>
+      
+        <div>
         <Navbar/>
-        <div className='display-album-content'>
+        </div>
+       <main>
+       <div className='display-album-content'>
             <div className='display-album-img'>
             <img src={albumData.image} alt=""/>
 
@@ -30,6 +34,27 @@ export default function DisplayAlbum() {
                </p>
             </div>
         </div>
+        <hr />
+        <div  className='album-info'>
+          <p className='title'>Title</p>
+          <p className='album'>Album</p>
+          <p className='date'>Date added</p>
+          <img className='clock' src={assets.clock_icon} alt=""/>
+        </div>
+        <hr/>
+        {songsData.map((item,index)=>(
+          <div className='title-image-box' key={index}>
+              <p className='title-one'>
+                <b>{index+1}</b>
+             
+              <img src={item.image} alt="" />
+              {item.name}
+              </p>
+              <p className='album-two'>{albumData.name}</p>
+              <p className='date-three'>5 days ago</p>
+          </div>
+        ) )}
+       </main>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import DisplayHome from './DisplayHome'
 import DisplayAlbum from './DisplayAlbum'
 export default function Display() {
   return (
-    <div>
+    <div className='display'>
       <Routes>
         <Route path="/" element={<DisplayHome/>}/>
         <Route path="/albums/:id" element={<DisplayAlbum/>}/>
